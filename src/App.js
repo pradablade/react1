@@ -1,25 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header/Header';
+import Nav from './components/NavBar/Navbar';
+import Profile from './components/Profile/Profile';
+import Dialogs from './components/Dialogs/Dialogs';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import News from './components/News/news';
+import { addPost } from './Redux/State';
 
-function App() {
+
+
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className='app-wraper'>
+        <Header />
+        <Nav state={props.appState.navBar} />
+        <div className='app-wraper-content'>
+          <Routes>
+            <Route path='profile' element={<Profile state={props.appState.profilePage} addPosts={props.addPost} />} />
+            <Route path='Dialogs' element={<Dialogs state={props.appState.dialogsPage}/>} />
+            <Route path='News' element={<News />} />
+          </Routes>
+        </div>
+      </div>
+    </BrowserRouter>
   );
 }
+
 
 export default App;
