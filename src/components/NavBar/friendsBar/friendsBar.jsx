@@ -4,7 +4,6 @@ import FriendsBarElement from "./friendsBarElement"
 
 
 const FriendsBar = (props) =>{
-    console.log(props)
     let friendsBarElement = props.state.map((f) => <FriendsBarElement ava={f.avatarimage} id={f.id} />)
     return(
     <div className={`${classes.item} ${classes.friends}`}>

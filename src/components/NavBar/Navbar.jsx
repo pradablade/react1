@@ -1,6 +1,7 @@
 import classes from "./Navbar.module.css"
 import { Link, NavLink } from "react-router-dom";
 import FriendsBar from "./friendsBar/friendsBar";
+import FriendsBarContainer from "./friendsBar/friendsBarContainer";
 
 const setActive = ({isActive}) => (isActive ? `${classes.active}` : "")
 
@@ -23,7 +24,7 @@ const Nav = (props) => {
       Settings
     </div>
     <div>
-      <FriendsBar state={props.state.friends}/>
+      {/* <FriendsBarContainer state={props.state.friends}/> */}
     </div>
   </nav>)
 }
@@ -31,5 +32,3 @@ const Nav = (props) => {
 
 
 export default Nav;
-
-console.log(`${classes.active}`)
