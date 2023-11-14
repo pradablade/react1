@@ -13,10 +13,10 @@ let inistionalState = {
     dialogs: [
         { id: "1", name: "Oleg" },
         { id: "2", name: "Vlad" },
-        { id: "3", name: "fubar" },
-        { id: "4", name: "slidan" },
-        { id: "5", name: "azazin" },
-        { id: "6", name: "maksos" },
+        { id: "3", name: "ilya" },
+        { id: "4", name: "a" },
+        { id: "5", name: "b" },
+        { id: "6", name: "c" },
     ],
 
     newMessageText: "input text"
