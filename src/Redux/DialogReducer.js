@@ -6,7 +6,7 @@ const ADD_MESSAGE = "ADD-MESSAGE"
 let inistionalState = {
     messages: [
         { id: "1", message: "Hi" },
-        { id: "2", message: "IDI NAXUY!" },
+        { id: "2", message: "www" },
         { id: "3", message: "wawawwawwaw" },
     ],
 
