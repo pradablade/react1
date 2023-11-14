@@ -4,7 +4,7 @@ const UPDATE_NEW_POST_TEXT = "UPDATE-NEW-POST-TEXT"
 
 let initionalState = {posts: [
     { id: "1", message: "u first", likes: "44" },
-    { id: "2", message: "w?", likes: "1488" },
+    { id: "2", message: "w?", likes: "148" },
     { id: "3", message: "dddd", likes: "228" },
 ],
 newPostText: "New Post" }
